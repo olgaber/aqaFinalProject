@@ -7,7 +7,6 @@ import com.provectus.pages.ProfilePage;
 import com.provectus.pages.SignInPage;
 import org.testng.Assert;
 import org.testng.annotations.Test;
-
 import java.util.concurrent.TimeUnit;
 
 import static com.codeborne.selenide.Selenide.open;

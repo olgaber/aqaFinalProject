@@ -9,7 +9,6 @@ import com.provectus.pages.entities.Job;
 import com.provectus.pages.entities.User;
 import org.testng.Assert;
 import org.testng.annotations.Test;
-
 import java.io.IOException;
 
 public class JobControllerApiTests {

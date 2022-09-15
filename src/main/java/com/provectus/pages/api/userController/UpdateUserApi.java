@@ -1,12 +1,11 @@
 package com.provectus.pages.api.userController;
-import com.google.gson.Gson;
+
 import com.provectus.pages.entities.User;
 import okhttp3.OkHttpClient;
 import okhttp3.Request;
 import okhttp3.RequestBody;
 import okhttp3.Response;
 import org.json.JSONObject;
-
 import java.io.IOException;
 
 public class UpdateUserApi {
@@ -35,5 +34,4 @@ public class UpdateUserApi {
         System.out.println("Update user response code: " + response.code());
 
     }
-
 }

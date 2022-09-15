@@ -18,7 +18,7 @@ public class AuthControllerApiTests
         User user = fillUserData();
         signUpApi.createNewUser(user);
 
-        String username = user.getUsername();
+        //String username = user.getUsername();
         //System.out.println(username);
         Assert.assertNotNull(user);
 
