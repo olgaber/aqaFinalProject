@@ -68,5 +68,4 @@ public class CreateNewJobTest {
 
         TimeUnit.SECONDS.sleep(4);
     }
-
 }

@@ -4,7 +4,31 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="96eb2447-5c69-4312-8e42-50e726fa574d" name="Changes" comment="" />
+    <list default="true" id="96eb2447-5c69-4312-8e42-50e726fa574d" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/provectus/pages/AddCommentPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/provectus/pages/AddCommentPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/provectus/pages/JobsListPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/provectus/pages/JobsListPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/provectus/pages/ProfilePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/provectus/pages/ProfilePage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/provectus/pages/SignInPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/provectus/pages/SignInPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/provectus/pages/SignUpPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/provectus/pages/SignUpPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/provectus/pages/WelcomePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/provectus/pages/WelcomePage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/provectus/pages/api/authController/SignInApi.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/provectus/pages/api/authController/SignInApi.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/provectus/pages/api/authController/SignUpApi.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/provectus/pages/api/authController/SignUpApi.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/provectus/pages/api/jobController/DeleteJobApi.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/provectus/pages/api/jobController/DeleteJobApi.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/provectus/pages/api/jobController/GetJobByIdApi.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/provectus/pages/api/jobController/GetJobByIdApi.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/provectus/pages/api/jobController/ListAllJobsApi.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/provectus/pages/api/jobController/ListAllJobsApi.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/provectus/pages/api/userController/GetUserApi.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/provectus/pages/api/userController/GetUserApi.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/provectus/pages/api/userController/GetUserByIdApi.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/provectus/pages/api/userController/GetUserByIdApi.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/provectus/pages/api/userController/UpdateUserApi.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/provectus/pages/api/userController/UpdateUserApi.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/provectus/pages/entities/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/provectus/pages/entities/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/api/AuthControllerApiTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/api/AuthControllerApiTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/api/JobControllerApiTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/api/JobControllerApiTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/api/UserControllerApiTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/api/UserControllerApiTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/provectus/tests/ui/AddCommentTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/provectus/tests/ui/AddCommentTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/provectus/tests/ui/CreateNewJobTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/provectus/tests/ui/CreateNewJobTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/provectus/tests/ui/RemoveJobTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/provectus/tests/ui/RemoveJobTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/provectus/tests/ui/UpdateUserDataTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/provectus/tests/ui/UpdateUserDataTest.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -17,10 +41,19 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectId" id="2EWYChmefQjek2aghHfRBQsBiYj" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -145,5 +178,16 @@
       <updated>1662712697496</updated>
     </task>
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>

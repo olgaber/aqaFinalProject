@@ -6,7 +6,6 @@ import okhttp3.RequestBody;
 import okhttp3.OkHttpClient;
 import okhttp3.Response;
 import org.json.JSONObject;
-
 import java.io.IOException;
 
 public class SignInApi {
@@ -36,6 +35,5 @@ public class SignInApi {
         assert responseJson.get("token").toString() != null;
 
         return responseJson.get("token").toString();
-
     }
 }

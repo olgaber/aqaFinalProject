@@ -1,12 +1,7 @@
 package com.provectus.pages;
 
-import com.codeborne.selenide.Condition;
 import com.codeborne.selenide.SelenideElement;
 import com.provectus.pages.entities.User;
-import org.openqa.selenium.WebDriver;
-
-import java.util.concurrent.TimeUnit;
-
 import static com.codeborne.selenide.Selenide.$;
 import static com.codeborne.selenide.Selenide.$x;
 

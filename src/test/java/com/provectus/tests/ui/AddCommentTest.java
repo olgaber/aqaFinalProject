@@ -8,7 +8,6 @@ import org.testng.Assert;
 import org.testng.annotations.Test;
 import java.util.Random;
 import java.util.concurrent.TimeUnit;
-
 import static com.codeborne.selenide.Selenide.open;
 
 public class AddCommentTest {

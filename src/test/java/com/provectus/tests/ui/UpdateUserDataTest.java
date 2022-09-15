@@ -75,5 +75,4 @@ public class UpdateUserDataTest {
         TimeUnit.SECONDS.sleep(4);
 
     }
-
 }

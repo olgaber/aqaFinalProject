@@ -5,11 +5,9 @@ import com.provectus.pages.entities.User;
 import okhttp3.OkHttpClient;
 import okhttp3.Request;
 import okhttp3.Response;
-
 import java.io.IOException;
 
 public class GetUserApi {
-
     public User getUser(String token) throws IOException {
 
         Request request = new Request.Builder()

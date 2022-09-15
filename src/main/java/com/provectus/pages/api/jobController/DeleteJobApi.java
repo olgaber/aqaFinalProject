@@ -32,6 +32,5 @@ public class DeleteJobApi {
 
         assert response.code() == 200;
         System.out.println(response.code());
-
     }
 }

@@ -5,7 +5,6 @@ import okhttp3.Request;
 import okhttp3.RequestBody;
 import okhttp3.Response;
 import com.google.gson.Gson;
-
 import java.io.IOException;
 
 public class SignUpApi {

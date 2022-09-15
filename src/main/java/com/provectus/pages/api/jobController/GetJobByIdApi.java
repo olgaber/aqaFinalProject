@@ -2,11 +2,9 @@ package com.provectus.pages.api.jobController;
 
 import com.google.gson.Gson;
 import com.provectus.pages.entities.Job;
-import com.provectus.pages.entities.User;
 import okhttp3.OkHttpClient;
 import okhttp3.Request;
 import okhttp3.Response;
-
 import java.io.IOException;
 
 public class GetJobByIdApi {
@@ -31,5 +29,4 @@ public class GetJobByIdApi {
 
         return jobById;
     }
-
 }
