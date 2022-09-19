@@ -35,6 +35,8 @@ public class CreateJobApi {
         OkHttpClient client = new OkHttpClient();
         Response response = client.newCall(request).execute();
 
+        //System.out.println(response.body().string());
+
         assert response.code() == 200;
 
         return job;

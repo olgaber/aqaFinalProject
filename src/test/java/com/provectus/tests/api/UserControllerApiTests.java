@@ -1,4 +1,4 @@
-package api;
+package com.provectus.tests.api;
 
 import com.provectus.pages.api.authController.SignInApi;
 import com.provectus.pages.api.authController.SignUpApi;

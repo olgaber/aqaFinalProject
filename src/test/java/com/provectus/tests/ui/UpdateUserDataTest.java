@@ -1,6 +1,7 @@
 package com.provectus.tests.ui;
 
-import api.AuthControllerApiTests;
+import com.provectus.tests.BaseTest;
+import com.provectus.tests.api.AuthControllerApiTests;
 import com.codeborne.selenide.Condition;
 import com.provectus.pages.*;
 import com.codeborne.selenide.Configuration;
@@ -12,7 +13,7 @@ import static com.codeborne.selenide.Selenide.open;
 import static com.codeborne.selenide.Selenide.switchTo;
 import static com.codeborne.selenide.WebDriverRunner.getWebDriver;
 
-public class UpdateUserDataTest {
+public class UpdateUserDataTest extends BaseTest {
 
     @Test
     public void UserSignUpTest() throws InterruptedException {

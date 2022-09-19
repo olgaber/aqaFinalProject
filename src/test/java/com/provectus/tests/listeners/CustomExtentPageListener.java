@@ -3,17 +3,17 @@ package com.provectus.tests.listeners;
 import com.aventstack.extentreports.ExtentTest;
 import com.aventstack.extentreports.service.ExtentTestManager;
 import com.aventstack.extentreports.testng.listener.ExtentITestListenerClassAdapter;
+import com.provectus.pages.DriverHolder;
 import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.testng.ITestResult;
-//import ua.hillel.patterns.DriverHolder;
 import java.io.File;
 import java.io.IOException;
 import java.util.Base64;
 
 public class CustomExtentPageListener extends ExtentITestListenerClassAdapter {
-/*    @Override
+   @Override
     public synchronized void onTestFailure(ITestResult result) {
         super.onTestFailure(result);
 
@@ -50,5 +50,5 @@ public class CustomExtentPageListener extends ExtentITestListenerClassAdapter {
             e.printStackTrace();
         }
         return fileForCopy;
-    }*/
+    }
 }

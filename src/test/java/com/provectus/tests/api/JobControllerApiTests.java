@@ -1,4 +1,4 @@
-package api;
+package com.provectus.tests.api;
 
 import com.provectus.pages.api.authController.SignInApi;
 import com.provectus.pages.api.authController.SignUpApi;
@@ -14,7 +14,7 @@ import java.io.IOException;
 public class JobControllerApiTests {
 
     @Test
-    public void createNewJob() throws IOException {
+    public Job createNewJob() throws IOException {
 
         AuthControllerApiTests authControllerApiTests = new AuthControllerApiTests();
         SignUpApi signUpApi = new SignUpApi();
@@ -30,7 +30,8 @@ public class JobControllerApiTests {
         Job job = fillJobData();
         Job newJob = createJobApi.createJob(token, job);
 
-        Assert.assertEquals(newJob.getTitle(), job.getTitle(), "Job titles should be the same!");
+        //Assert.assertEquals(newJob.getTitle(), job.getTitle(), "Job titles should be the same!");
+       return newJob;
     }
 
     @Test

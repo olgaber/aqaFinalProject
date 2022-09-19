@@ -1,15 +1,15 @@
-package api;
+package com.provectus.tests.api;
 
 import com.github.javafaker.Faker;
 import com.provectus.pages.api.authController.SignInApi;
 import com.provectus.pages.api.authController.SignUpApi;
 import com.provectus.pages.entities.User;
+import com.provectus.tests.BaseTest;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 import java.io.IOException;
 
-public class AuthControllerApiTests
-{
+public class AuthControllerApiTests extends BaseTest {
 
     @Test
     public void authorizeUserTest() throws IOException {
