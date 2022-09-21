@@ -11,7 +11,7 @@ public class SignUpApi {
 
     public User createNewUser(User user) throws IOException {
 
-        user.setId(null);
+        user.setId(0);
         user.setUsername(user.getUsername());
         user.setFirstName(user.getFirstName());
         user.setLastName(user.getLastName());
@@ -21,8 +21,6 @@ public class SignUpApi {
 
         Gson gson = new Gson();
         String json = gson.toJson(user);
-
-        //System.out.println("JSON" + json.toString());
 
         RequestBody body = RequestBody.create(json.getBytes());
         Request request = new Request.Builder()

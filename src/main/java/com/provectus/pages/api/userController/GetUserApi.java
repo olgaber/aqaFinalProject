@@ -1,6 +1,7 @@
 package com.provectus.pages.api.userController;
 
 import com.google.gson.Gson;
+import com.provectus.pages.Config;
 import com.provectus.pages.entities.User;
 import okhttp3.OkHttpClient;
 import okhttp3.Request;
@@ -12,7 +13,7 @@ public class GetUserApi {
 
         Request request = new Request.Builder()
                 .get()
-                .url("https://freelance.lsrv.in.ua/api/user/")
+                .url(Config.url + "api/user/")
                 .addHeader("Content-Type", "application/json")
                 .addHeader("Authorization", token)
                 .build();
@@ -23,8 +24,8 @@ public class GetUserApi {
         assert response.code() == 200;
 
         Gson gson = new Gson();
-        User newUser = gson.fromJson(response.body().string(), User.class);
+        User foundUser = gson.fromJson(response.body().string(), User.class);
 
-        return newUser;
+        return foundUser;
     }
 }

@@ -4,16 +4,25 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="96eb2447-5c69-4312-8e42-50e726fa574d" name="Changes" comment="Latest version">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/provectus/pages/DriverHolder.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/provectus/tests/BaseTest.java" afterDir="false" />
+    <list default="true" id="96eb2447-5c69-4312-8e42-50e726fa574d" name="Changes" comment="extentReports added, hardcoded credentials removed">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/provectus/pages/Config.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/provectus/tests/DataProvider.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/provectus/pages/ProfilePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/provectus/pages/ProfilePage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/provectus/pages/JobsListPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/provectus/pages/JobsListPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/provectus/pages/api/authController/SignUpApi.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/provectus/pages/api/authController/SignUpApi.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/provectus/pages/api/jobController/CreateJobApi.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/provectus/pages/api/jobController/CreateJobApi.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/api/AuthControllerApiTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/provectus/tests/api/AuthControllerApiTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/api/JobControllerApiTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/provectus/tests/api/JobControllerApiTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/api/UserControllerApiTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/provectus/tests/api/UserControllerApiTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/provectus/tests/listeners/CustomExtentPageListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/provectus/tests/listeners/CustomExtentPageListener.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/provectus/pages/api/jobController/DeleteJobApi.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/provectus/pages/api/jobController/DeleteJobApi.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/provectus/pages/api/jobController/GetJobByIdApi.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/provectus/pages/api/jobController/GetJobByIdApi.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/provectus/pages/api/jobController/ListAllJobsApi.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/provectus/pages/api/jobController/ListAllJobsApi.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/provectus/pages/api/userController/GetUserApi.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/provectus/pages/api/userController/GetUserApi.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/provectus/pages/api/userController/GetUserByIdApi.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/provectus/pages/api/userController/GetUserByIdApi.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/provectus/pages/api/userController/UpdateUserApi.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/provectus/pages/api/userController/UpdateUserApi.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/provectus/pages/entities/Job.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/provectus/pages/entities/Job.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/provectus/pages/entities/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/provectus/pages/entities/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/provectus/tests/BaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/provectus/tests/BaseTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/provectus/tests/api/AuthControllerApiTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/provectus/tests/api/AuthControllerApiTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/provectus/tests/api/JobControllerApiTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/provectus/tests/api/JobControllerApiTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/provectus/tests/api/UserControllerApiTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/provectus/tests/api/UserControllerApiTests.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/provectus/tests/ui/AddCommentTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/provectus/tests/ui/AddCommentTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/provectus/tests/ui/CreateNewJobTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/provectus/tests/ui/CreateNewJobTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/provectus/tests/ui/RemoveJobTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/provectus/tests/ui/RemoveJobTest.java" afterDir="false" />
@@ -34,7 +43,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="finalVersion" />
+        <entry key="$PROJECT_DIR$" value="reports" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -58,7 +67,7 @@
     "project.structure.side.proportion": "0.0"
   }
 }]]></component>
-  <component name="RunManager" selected="TestNG.RemoveJobTest.removeJob">
+  <component name="RunManager" selected="TestNG.AddCommentTest.addCommentTest">
     <configuration name="AddCommentTest.addCommentTest" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="aqaFinalProject" />
       <extension name="coverage">
@@ -71,23 +80,6 @@
       <option name="MAIN_CLASS_NAME" value="com.provectus.tests.ui.AddCommentTest" />
       <option name="METHOD_NAME" value="addCommentTest" />
       <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="CreateNewJobTest" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="aqaFinalProject" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.provectus.tests.ui.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.provectus.tests.ui" />
-      <option name="MAIN_CLASS_NAME" value="com.provectus.tests.ui.CreateNewJobTest" />
-      <option name="TEST_OBJECT" value="CLASS" />
       <properties />
       <listeners />
       <method v="2">
@@ -112,7 +104,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="JobControllerApiTests.createNewJob" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="JobControllerApiTests.deleteJob" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="aqaFinalProject" />
       <extension name="coverage">
         <pattern>
@@ -122,7 +114,7 @@
       </extension>
       <option name="PACKAGE_NAME" value="com.provectus.tests.api" />
       <option name="MAIN_CLASS_NAME" value="com.provectus.tests.api.JobControllerApiTests" />
-      <option name="METHOD_NAME" value="createNewJob" />
+      <option name="METHOD_NAME" value="deleteJob" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -130,17 +122,35 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="RemoveJobTest.removeJob" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="JobControllerApiTests.getJobById" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="aqaFinalProject" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.provectus.tests.ui.*" />
+          <option name="PATTERN" value="com.provectus.tests.api.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.provectus.tests.ui" />
-      <option name="MAIN_CLASS_NAME" value="com.provectus.tests.ui.RemoveJobTest" />
-      <option name="METHOD_NAME" value="removeJob" />
+      <option name="PACKAGE_NAME" value="com.provectus.tests.api" />
+      <option name="MAIN_CLASS_NAME" value="com.provectus.tests.api.JobControllerApiTests" />
+      <option name="METHOD_NAME" value="getJobById" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="JobControllerApiTests.listAllJobs" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="aqaFinalProject" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.provectus.tests.api.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.provectus.tests.api" />
+      <option name="MAIN_CLASS_NAME" value="com.provectus.tests.api.JobControllerApiTests" />
+      <option name="METHOD_NAME" value="listAllJobs" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -150,11 +160,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.RemoveJobTest.removeJob" />
         <item itemvalue="TestNG.AddCommentTest.addCommentTest" />
+        <item itemvalue="TestNG.JobControllerApiTests.deleteJob" />
+        <item itemvalue="TestNG.JobControllerApiTests.getJobById" />
+        <item itemvalue="TestNG.JobControllerApiTests.listAllJobs" />
         <item itemvalue="TestNG.CreateNewJobTest.createNewJobTest" />
-        <item itemvalue="TestNG.JobControllerApiTests.createNewJob" />
-        <item itemvalue="TestNG.CreateNewJobTest" />
       </list>
     </recent_temporary>
   </component>
@@ -174,7 +184,14 @@
       <option name="project" value="LOCAL" />
       <updated>1663254974093</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="extentReports added, hardcoded credentials removed">
+      <created>1663619627224</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1663619627224</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -190,6 +207,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Latest version" />
-    <option name="LAST_COMMIT_MESSAGE" value="Latest version" />
+    <MESSAGE value="extentReports added, hardcoded credentials removed" />
+    <option name="LAST_COMMIT_MESSAGE" value="extentReports added, hardcoded credentials removed" />
   </component>
 </project>

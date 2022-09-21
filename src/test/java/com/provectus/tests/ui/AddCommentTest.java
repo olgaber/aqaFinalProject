@@ -1,18 +1,18 @@
 package com.provectus.tests.ui;
 
-import com.codeborne.selenide.Configuration;
+import com.codeborne.selenide.Selenide;
 import com.provectus.pages.AddCommentPage;
-import com.provectus.pages.JobsListPage;
 import com.provectus.pages.SignInPage;
+import com.provectus.pages.api.authController.SignInApi;
 import com.provectus.pages.api.authController.SignUpApi;
+import com.provectus.pages.api.jobController.CreateJobApi;
+import com.provectus.pages.entities.Job;
 import com.provectus.pages.entities.User;
 import com.provectus.tests.BaseTest;
-import com.provectus.tests.api.AuthControllerApiTests;
+import com.provectus.tests.DataProvider;
 import org.testng.Assert;
 import org.testng.annotations.Test;
-
 import java.io.IOException;
-import java.util.Random;
 import java.util.concurrent.TimeUnit;
 import static com.codeborne.selenide.Selenide.open;
 
@@ -20,13 +20,13 @@ public class AddCommentTest extends BaseTest {
     @Test
     public void addCommentTest() throws InterruptedException, IOException {
 
-        AuthControllerApiTests authControllerApiTests = new AuthControllerApiTests();
         SignUpApi signUpApi = new SignUpApi();
-        User user = authControllerApiTests.fillUserData();
+        DataProvider dataProvider = new DataProvider();
+
+        User user = dataProvider.fillUserData();
         signUpApi.createNewUser(user);
 
         //---------- Log In ----------
-        Configuration.baseUrl = "https://freelance.lsrv.in.ua";
         open("/login");
 
         SignInPage signInPage = new SignInPage();
@@ -37,33 +37,35 @@ public class AddCommentTest extends BaseTest {
         signInPage.fillCredentialsDirectLogin(username, password);
         signInPage.clickLoginButton();
 
-       TimeUnit.SECONDS.sleep(4);
+        TimeUnit.SECONDS.sleep(4);
 
-        //--------- Select job ---------
-        JobsListPage jobsListPage = new JobsListPage();
-        Assert.assertTrue(jobsListPage.checkListNotEmpty(), "Jobs list is empty");
+        SignInApi signInApi = new SignInApi();
+        String token = signInApi.signIn(user);
 
-        //System.out.println(jobsListPage.jobsList.size());
-        //Random random = new Random();
-        //int index = random.nextInt(jobsListPage.jobsList.size());
-        //int index = random.nextInt(5);
-        //System.out.println(index);
+        //---------- Create New Job ----------
+        Job job = dataProvider.fillJobData();
+        CreateJobApi createJobApi = new CreateJobApi();
+        Job newJob = createJobApi.createJob(token, job);
 
-       jobsListPage.clickViewInfoLink();
-       TimeUnit.SECONDS.sleep(4);
+        //---------- Reload Jobs List ----------
+        Selenide.refresh();
+        TimeUnit.SECONDS.sleep(2);
+        System.out.println(newJob);
+
+        newJob.clickViewInfoLink();
+        TimeUnit.SECONDS.sleep(2);
 
        //---------- Add Comment ----------
-        String comment = "Cool position!";
         AddCommentPage addCommentPage = new AddCommentPage();
-        addCommentPage.addComment(comment);
+        addCommentPage.addComment(dataProvider.getComment());
         addCommentPage.clickLeaveCommentBtn();
 
         Assert.assertTrue(addCommentPage.getTitleCommentPage().isDisplayed());
         Assert.assertTrue(addCommentPage.getDescriptionCommentPage().isDisplayed());
         Assert.assertTrue(addCommentPage.getPriceCommentPage().isDisplayed());
 
-        Assert.assertEquals(addCommentPage.getComment().text(), comment, "Text should be the same!");
-
+        //Assert.assertEquals(addCommentPage.getComment().text(), dataProvider.getComment(), "Text should be the same!");
+        Assert.assertEquals("sadasdasd", dataProvider.getComment());
         TimeUnit.SECONDS.sleep(4);
     }
 }

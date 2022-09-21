@@ -1,10 +1,10 @@
 package com.provectus.tests.ui;
 
 import com.provectus.tests.BaseTest;
+import com.provectus.tests.DataProvider;
 import com.provectus.tests.api.AuthControllerApiTests;
 import com.codeborne.selenide.Condition;
 import com.provectus.pages.*;
-import com.codeborne.selenide.Configuration;
 import com.provectus.pages.entities.User;
 import org.testng.Assert;
 import org.testng.annotations.Test;
@@ -21,15 +21,12 @@ public class UpdateUserDataTest extends BaseTest {
         //---------- Sign Up ----------
         WelcomePage welcomePage = new WelcomePage();
         SignInPage signInPage = new SignInPage();
-        AuthControllerApiTests authControllerApiTests = new AuthControllerApiTests();
-
-        Configuration.baseUrl = "https://freelance.lsrv.in.ua";
+        DataProvider dataProvider = new DataProvider();
 
         open("/home");
 
         SignUpPage signUpPage = welcomePage.clickRegisterLink();
-
-        User user = authControllerApiTests.fillUserData();
+        User user = dataProvider.fillUserData();
         signUpPage.signUp(user);
 
         String username = user.getUsername();
@@ -74,6 +71,5 @@ public class UpdateUserDataTest extends BaseTest {
         Assert.assertEquals(profilePage.getUpdatedData().text(), userData);
 
         TimeUnit.SECONDS.sleep(4);
-
     }
 }

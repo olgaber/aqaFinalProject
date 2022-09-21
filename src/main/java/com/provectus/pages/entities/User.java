@@ -2,7 +2,7 @@ package com.provectus.pages.entities;
 
 public class User {
 
-    private String id;
+    private int id;
     private String username;
     private String firstName;
     private String lastName;
@@ -13,11 +13,11 @@ public class User {
         return username;
     }
 
-    public String getId() {
+    public int getId() {
         return id;
     }
 
-    public void setId(String id) {
+    public void setId(int id) {
         this.id = id;
     }
 

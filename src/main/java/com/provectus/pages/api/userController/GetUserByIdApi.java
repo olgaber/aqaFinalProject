@@ -1,5 +1,6 @@
 package com.provectus.pages.api.userController;
 import com.google.gson.Gson;
+import com.provectus.pages.Config;
 import com.provectus.pages.entities.User;
 import okhttp3.OkHttpClient;
 import okhttp3.Request;
@@ -8,11 +9,11 @@ import java.io.IOException;
 
 public class GetUserByIdApi {
 
-    public User getUserById(String token, String id) throws IOException {
+    public User getUserById(String token, int id) throws IOException {
 
         Request request = new Request.Builder()
                 .get()
-                .url("https://freelance.lsrv.in.ua/api/user/" + id)
+                .url(Config.url + "api/user/" + id)
                 .addHeader("Content-Type", "application/json")
                 .addHeader("Authorization", token)
                 .build();
@@ -20,10 +21,11 @@ public class GetUserByIdApi {
         OkHttpClient client = new OkHttpClient();
         Response response = client.newCall(request).execute();
 
-        System.out.println("GetUserById response code " + response.code());
-        Gson gson = new Gson();
+        assert response.code() == 200;
 
+        Gson gson = new Gson();
         User userById = gson.fromJson(response.body().string(), User.class);
+        //System.out.println("User Id: " + userById.getId());
 
         return userById;
     }

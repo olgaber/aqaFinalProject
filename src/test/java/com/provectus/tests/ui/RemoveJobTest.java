@@ -1,9 +1,6 @@
 package com.provectus.tests.ui;
 
-import com.codeborne.selenide.AuthenticationType;
 import com.codeborne.selenide.Condition;
-import com.codeborne.selenide.Configuration;
-import com.provectus.pages.DriverHolder;
 import com.provectus.pages.JobsListPage;
 import com.provectus.pages.ProfilePage;
 import com.provectus.pages.SignInPage;
@@ -13,8 +10,7 @@ import com.provectus.pages.api.jobController.CreateJobApi;
 import com.provectus.pages.entities.Job;
 import com.provectus.pages.entities.User;
 import com.provectus.tests.BaseTest;
-import com.provectus.tests.api.AuthControllerApiTests;
-import com.provectus.tests.api.JobControllerApiTests;
+import com.provectus.tests.DataProvider;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
@@ -29,14 +25,14 @@ public class RemoveJobTest extends BaseTest {
     @Test
     public void removeJob() throws InterruptedException, IOException {
 
-        AuthControllerApiTests authControllerApiTests = new AuthControllerApiTests();
         SignUpApi signUpApi = new SignUpApi();
-        User user = authControllerApiTests.fillUserData();
+        DataProvider dataProvider = new DataProvider();
+
+        User user = dataProvider.fillUserData();
         signUpApi.createNewUser(user);
         SignInApi signInApi = new SignInApi();
         String token = signInApi.signIn(user);
 
-        Configuration.baseUrl = "https://freelance.lsrv.in.ua";
         open("/login");
 
         SignInPage signInPage = new SignInPage();
@@ -49,10 +45,10 @@ public class RemoveJobTest extends BaseTest {
        TimeUnit.SECONDS.sleep(2);
 
         //---------- Create Job ----------
-        JobControllerApiTests jobControllerApiTests = new JobControllerApiTests();
-        Job job = jobControllerApiTests.fillJobData();
+        Job job = dataProvider.fillJobData();
         CreateJobApi createJobApi = new CreateJobApi();
         Job createdJob = createJobApi.createJob(token, job);
+        System.out.println("ID of created job: " + createdJob.getId());
 
         //---------- Log In ----------
         signInPage.fillCredentialsDirectLogin(username, password);
@@ -90,7 +86,6 @@ public class RemoveJobTest extends BaseTest {
         else{
             String[] numberArr1 = header1.split("\\D+");
             int updatedJobsNumber = Integer.parseInt(String.join("", numberArr1));
-
             Assert.assertEquals(profilePage.getJobHeader().text(), "You have " + updatedJobsNumber + "jobs");
         }
     }
