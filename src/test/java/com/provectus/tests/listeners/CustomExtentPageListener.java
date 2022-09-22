@@ -12,6 +12,8 @@ import java.io.File;
 import java.io.IOException;
 import java.util.Base64;
 
+import static com.codeborne.selenide.Screenshots.takeScreenShotAsFile;
+
 public class CustomExtentPageListener extends ExtentITestListenerClassAdapter {
    @Override
     public synchronized void onTestFailure(ITestResult result) {
@@ -42,8 +44,10 @@ public class CustomExtentPageListener extends ExtentITestListenerClassAdapter {
 
     private File getScreenShot(ITestResult iTestResult) {
         File fileForCopy = new File(iTestResult.getName() + ".jpg");
-        File screenShotFile = ((TakesScreenshot) DriverHolder.getDriver()).getScreenshotAs(
-                OutputType.FILE);
+
+        //File screenShotFile = ((TakesScreenshot) DriverHolder.getDriver()).getScreenshotAs(OutputType.FILE);
+        File screenShotFile = takeScreenShotAsFile();
+
         try {
             FileUtils.copyFile(screenShotFile, fileForCopy);
         } catch (IOException e) {

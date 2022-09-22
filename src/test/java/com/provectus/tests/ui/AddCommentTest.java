@@ -64,8 +64,8 @@ public class AddCommentTest extends BaseTest {
         Assert.assertTrue(addCommentPage.getDescriptionCommentPage().isDisplayed());
         Assert.assertTrue(addCommentPage.getPriceCommentPage().isDisplayed());
 
-        //Assert.assertEquals(addCommentPage.getComment().text(), dataProvider.getComment(), "Text should be the same!");
-        Assert.assertEquals("sadasdasd", dataProvider.getComment());
+        Assert.assertEquals(addCommentPage.getComment().text(), dataProvider.getComment(), "Text should be the same!");
+        //Assert.assertEquals("sadasdasd", dataProvider.getComment()); ---> make the test fail
         TimeUnit.SECONDS.sleep(4);
     }
 }
