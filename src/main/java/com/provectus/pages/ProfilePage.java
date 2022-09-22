@@ -25,7 +25,7 @@ public class ProfilePage {
     private final SelenideElement publishedJobDescription = $x("//app-my-jobs/div[1]//mat-card-content/p");
     private final SelenideElement publishedJobPrice = $x("//app-my-jobs/div[1]//mat-card-subtitle[2]");
     private final SelenideElement removeJobBtn = $x("//app-my-jobs//mat-card[1]//button");
-    private final SelenideElement jobHeader = $x("//h2[contains(text(), 'You have')]");
+    private final SelenideElement jobHeader = $x("//app-my-jobs//h2");
 
 
     public SelenideElement getPublishedJobTitle(){

@@ -1,5 +1,9 @@
 package com.provectus.pages.entities;
 
+import com.codeborne.selenide.SelenideElement;
+
+import static com.codeborne.selenide.Selenide.$x;
+
 public class Job {
     private int id;
     private String title;
@@ -66,5 +70,11 @@ public class Job {
                 ", user='" + user + '\'' +
                 ", noOfComments=" + noOfComments +
                 '}';
+    }
+
+    private SelenideElement viewInfoLink = $x("//mat-card-actions/button");
+
+    public void clickViewInfoLink(){
+        viewInfoLink.click();
     }
 }

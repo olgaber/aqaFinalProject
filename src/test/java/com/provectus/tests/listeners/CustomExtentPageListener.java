@@ -3,17 +3,19 @@ package com.provectus.tests.listeners;
 import com.aventstack.extentreports.ExtentTest;
 import com.aventstack.extentreports.service.ExtentTestManager;
 import com.aventstack.extentreports.testng.listener.ExtentITestListenerClassAdapter;
+import com.provectus.pages.DriverHolder;
 import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.testng.ITestResult;
-//import ua.hillel.patterns.DriverHolder;
 import java.io.File;
 import java.io.IOException;
 import java.util.Base64;
 
+import static com.codeborne.selenide.Screenshots.takeScreenShotAsFile;
+
 public class CustomExtentPageListener extends ExtentITestListenerClassAdapter {
-/*    @Override
+   @Override
     public synchronized void onTestFailure(ITestResult result) {
         super.onTestFailure(result);
 
@@ -42,13 +44,15 @@ public class CustomExtentPageListener extends ExtentITestListenerClassAdapter {
 
     private File getScreenShot(ITestResult iTestResult) {
         File fileForCopy = new File(iTestResult.getName() + ".jpg");
-        File screenShotFile = ((TakesScreenshot) DriverHolder.getDriver()).getScreenshotAs(
-                OutputType.FILE);
+
+        //File screenShotFile = ((TakesScreenshot) DriverHolder.getDriver()).getScreenshotAs(OutputType.FILE);
+        File screenShotFile = takeScreenShotAsFile();
+
         try {
             FileUtils.copyFile(screenShotFile, fileForCopy);
         } catch (IOException e) {
             e.printStackTrace();
         }
         return fileForCopy;
-    }*/
+    }
 }

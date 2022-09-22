@@ -1,6 +1,7 @@
 package com.provectus.pages.api.jobController;
 
 import com.google.gson.Gson;
+import com.provectus.pages.Config;
 import com.provectus.pages.entities.Job;
 import okhttp3.OkHttpClient;
 import okhttp3.Request;
@@ -13,7 +14,7 @@ public class GetJobByIdApi {
 
         Request request = new Request.Builder()
                 .get()
-                .url("https://freelance.lsrv.in.ua/api/job/" + id)
+                .url(Config.url + "api/job/" + id)
                 .addHeader("Content-Type", "application/json")
                 .addHeader("Authorization", token)
                 .build();
